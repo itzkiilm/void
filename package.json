@@ -10,7 +10,7 @@
     "type": "module",
     "scripts": {
         "start": "node index.js",
-        "build": "pnpm approve-builds --yes || true && vite build",
+        "build": "vite build",
         "build-static": "vite build && node build.js",
         "dev": "vite dev",
         "preview": "vite preview",
