@@ -10,4 +10,12 @@ export default defineConfig({
         }),
         dreamlandPlugin(),
     ],
+    optimizeDeps: {
+        exclude: ["dreamland-router"],
+    },
+    build: {
+        commonjsOptions: {
+            exclude: ["dreamland-router"],
+        },
+    },
 });
